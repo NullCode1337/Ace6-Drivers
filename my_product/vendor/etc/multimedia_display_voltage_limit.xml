@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- add for RUS lowvoltage temperature brightness limit. -->
+    <version>20250422</version>
+
+    <lowvoltage_brightness_limit support="1" name="P_7" temperatureRange="10,100">
+        <limitnit batteryRange="0, 1C">560,560</limitnit>  <!--batteryRange (a,b]-->
+        <limitnit batteryRange="1, 5C">1000,810</limitnit>  <!--a,b normal scene ,composite scene-->
+        <limitnit batteryRange="5, 15C">1800,1000</limitnit>
+        <limitnit batteryRange="15, 100C">1800,1800</limitnit>
+    </lowvoltage_brightness_limit>
+
+    <lowvoltage_brightness_limit support="1" name="P_7" temperatureRange="5,10C">
+        <limitnit batteryRange="0, 1C">560,560</limitnit>  <!--batteryRange (a,b]-->
+        <limitnit batteryRange="1, 10C">1000,810</limitnit>  <!--a,b normal scene ,composite scene-->
+        <limitnit batteryRange="10, 25C">1800,1000</limitnit>
+        <limitnit batteryRange="25, 100C">1800,1800</limitnit>
+    </lowvoltage_brightness_limit>
+
+    <lowvoltage_brightness_limit support="1" name="P_7" temperatureRange="0,5C">
+        <limitnit batteryRange="0, 1C">560,560</limitnit>  <!--batteryRange (a,b]-->
+        <limitnit batteryRange="1, 15C">1000,810</limitnit>  <!--a,b normal scene ,composite scene-->
+        <limitnit batteryRange="15, 32C">1800,1000</limitnit>
+        <limitnit batteryRange="32, 100C">1800,1800</limitnit>
+    </lowvoltage_brightness_limit>
+
+    <lowvoltage_brightness_limit support="1" name="P_7" temperatureRange="-100,0C">
+        <limitnit batteryRange="0, 1C">560,560</limitnit>  <!--batteryRange (a,b]-->
+        <limitnit batteryRange="1, 25C">1000,810</limitnit>  <!--a,b normal scene ,composite scene-->
+        <limitnit batteryRange="25, 50C">1000,1000</limitnit>
+        <limitnit batteryRange="50, 100C">1800,1800</limitnit>
+    </lowvoltage_brightness_limit>
+</root>

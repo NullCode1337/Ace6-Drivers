@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<root>
+    <Data>
+        <Brightness_Threshold>
+        200
+        </Brightness_Threshold>
+        <Upper_Limit>
+        2
+        </Upper_Limit>
+        <Lower_Limit>
+        1.5
+        </Lower_Limit>
+    </Data>
+
+    <Comfortable_Rhythm_Curve_Config>
+
+        <Comfortable_Rhythm_Temperature_Day_Curve>
+            <Ambient>
+            2500,2750,3000,3250,3500,3750,4000,4250,4500,4750,5000,5250,5500,5750,6000,6250,6500,6750,7000,7250,7500,7750,8000,8250,8500,8750,9000,9250,9500,9750,10000
+            </Ambient>
+
+            <Temperature>
+            4960,4960,4960,4960,4968,4984,5174,5245,5287,5316,5491,5610,5671,5873,5941,6031,6095,6106,6128,6137,6145,6149,6153,6159,6172,6179,6180,6180,6180,6180,6180
+            </Temperature>
+
+            <Lock_Lux>30</Lock_Lux>
+            <Lock_Cct>5300</Lock_Cct>
+        </Comfortable_Rhythm_Temperature_Day_Curve>
+
+        <Comfortable_Rhythm_Temperature_Night_Curve>
+            <Ambient>
+            2500,2750,3000,3250,3500,3750,4000,4250,4500,4750,5000,5250,5500,5750,6000,6250,6500,6750,7000,7250,7500,7750,8000,8250,8500,8750,9000,9250,9500,9750,10000
+            </Ambient>
+
+            <Temperature>
+            4800,4800,4800,4800,4800,4800,4800,4800,4800,5100,5100,5100,5100,5100,5100,5100,5100,5300,5300,5300,5300,5600,5600,5600,5600,5600,5600,5600,5600,5600,5600
+            </Temperature>
+
+            <Lock_Lux>30</Lock_Lux>
+            <Lock_Cct>5100</Lock_Cct>
+        </Comfortable_Rhythm_Temperature_Night_Curve>
+
+    </Comfortable_Rhythm_Curve_Config>
+
+    <Intelligent_Temperature_Algorithm_Config>
+         <Hbm_Lux>07775</Hbm_Lux>
+         <Hbm_Cct>078</Hbm_Cct>
+    </Intelligent_Temperature_Algorithm_Config>
+</root>
