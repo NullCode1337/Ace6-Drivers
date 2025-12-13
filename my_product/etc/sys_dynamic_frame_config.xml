@@ -1,0 +1,177 @@
+<filter-conf>
+    <version>20250825</version>
+    <enable>true</enable>
+    <isOpen>1</isOpen>
+    <filter-name>sys_dynamic_frame_config</filter-name>
+    <thermalLimit>47</thermalLimit>
+    <common>
+        <!--<item type="0" enable="true" targetFramerate="120" velocityFramerate="true" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="true" isWidespreadAnim="true" /> 默认调试动画-->
+        <item type="1" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!-- 存量View动画 -->
+        <item type="2" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--存量窗口动画-->
+        <item type="10001" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!-- OverScroller/OplusSpringOverScroller在屏滑动（列表滑动、短视频场景滑动） -->
+        <item type="10003" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!-- OverScroller/OplusSpringOverScroller fling（离屏fling，一般用于列表滑动场景 -->
+        <item type="10101" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--COUI面板动画--> 
+        <item type="10102" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--COUI列表滑动动画（COUIRecyclerView）--> 
+        <item type="10103" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--COUI Page页面切换动画（COUIviewpager）-->         
+        <item type="20103" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="true" isInGameAnim="true" /> <!--输入法进入退出-->
+    </common>
+    <special package="android"> <!--system_server-->
+        <item type="20102" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--dialog弹窗弹出收起/PIP出现消失&拖动-->
+        <item type="20105" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--闪达浮窗（非即时结束交互 & 弱平移动画）-->
+        <item type="20106" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--闪达浮窗（非即时结束交互 & 强平移动画）-->
+        <item type="20107" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--闪达浮窗（即时结束交互）-->
+        <item type="20108" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--分屏与PS（非即时结束交互 & 弱平移动画）-->
+        <item type="20109" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--分屏与PS（非即时结束交互 & 强平移动画）-->
+        <item type="20110" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--分屏与PS（即时结束交互）-->
+    </special>
+    <special package="com.ss.android.ugc.aweme">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.ss.android.ugc.aweme.splash.SplashActivity|com.ss.android.ugc.aweme.detail.ui.DetailActivity|com.ss.android.ugc.aweme.live.LivePlayActivity|com.ss.android.ugc.aweme.mix.refactor.inner.CompilationInnerActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+        <item type="20103" enable="false" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="true" isInGameAnim="true" /> <!--输入法进入退出-->
+    </special>
+    <special package="com.ss.android.ugc.aweme.lite">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.ss.android.ugc.aweme.splash.SplashActivity|com.ss.android.ugc.aweme.detail.ui.DetailActivity|com.ss.android.ugc.aweme.live.LivePlayActivity|com.ss.android.ugc.aweme.mix.refactor.inner.CompilationInnerActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+        <item type="20103" enable="false" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="true" isInGameAnim="true" /> <!--输入法进入退出-->
+    </special>
+    <special package="com.ss.android.ugc.live">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.ss.android.ugc.aweme.splash.SplashActivity|com.ss.android.ugc.aweme.detail.ui.DetailActivity|com.ss.android.ugc.aweme.live.LivePlayActivity|com.ss.android.ugc.aweme.mix.refactor.inner.CompilationInnerActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+        <item type="20103" enable="false" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="true" isInGameAnim="true" /> <!--输入法进入退出-->
+    </special>
+    <special package="com.smile.gifmaker">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.yxcorp.gifshow.HomeActivity|com.yxcorp.gifshow.detail.PhotoDetailActivity|com.kuaishou.live.core.basic.activity.LiveSlideActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.kuaishou.nebula">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.yxcorp.gifshow.HomeActivity|com.yxcorp.gifshow.detail.PhotoDetailActivity|com.kuaishou.live.core.basic.activity.LiveSlideActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="tv.danmaku.bili">
+        <item type="10002" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.bilibili.video.story.StoryVideoActivity" /> <!--OverScroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.qiyi.video">
+        <item type="10002" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.qiyi.video.WelcomeActivity|org.qiyi.pluginlibrary.component.InstrActivityProxy1|org.iqiyi.video.activity.PlayerActivity" /> <!--OverScroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.ss.android.article.video">
+        <item type="10002" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.ss.android.article.video.activity.SplashActivity" /> <!--OverScroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.ixigua.openliveplugin.live.LivePlayerActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.hunantv.imgo.activity">
+        <item type="10002" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.mgtv.ui.cornucopia.CornucopiaActivity|com.mgtv.ui.cornucopia.clip.video.VideoClipActivity" /> <!--OverScroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.tencent.weishi">
+        <item type="10002" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.tencent.oscar.module.main.MainActivity|com.tencent.oscar.module.main.feed.FeedActivity" /> <!--OverScroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.tencent.mm"> <!--微信-->
+        <item type="10002" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.tencent.mm.plugin.finder.ui.FinderHomeAffinityUI" /> <!--OverScroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.sina.weibo"> <!--微博-->
+        <item type="10002" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.sina.weibo.MediaCoreActivity" /> <!--OverScroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.sina.weibo.wblive.container.WBLiveActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.ss.android.article.news"> <!--头条-->
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.bytedance.android.openlive.plugin.LivePlayerActivity|com.ss.android.ugc.detail.activity.TikTokActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.heytap.browser"> <!--浏览器-->
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.byted.live.lite.Activity_main_singleTask3|com.byted.live.lite.Activity_main_singleTask2" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.ss.android.ugc.trill">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.ss.android.ugc.aweme.splash.SplashActivity|com.ss.android.ugc.aweme.detail.ui.DetailActivity|com.ss.android.ugc.aweme.live.LivePlayActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.zhiliaoapp.musically.go">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.zhiliaoapp.musically">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.ss.android.ugc.aweme.splash.SplashActivity|com.ss.android.ugc.aweme.detail.ui.DetailActivity|com.ss.android.ugc.aweme.live.LivePlayActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.google.android.youtube">
+        <item type="10002" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.google.android.youtube.app.honeycomb.Shell$HomeActivity" /> <!--OverScroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.google.android.apps.youtube.kids">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.netflix.mediaclient">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.instagram.android">
+        <item type="10002" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.instagram.mainactivity.InstagramMainActivity" /> <!--OverScroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.android.systemui"> 
+        <!--201-WMS动画开始-->
+        <item type="20111" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="true" isInGameAnim="true" /> <!--折叠屏转场:大小屏切换动画-->
+        <item type="20102" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--dialog弹窗弹出收起/PIP出现消失&拖动-->
+        <item type="20104" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="true" isInGameAnim="true" /> <!--单手模式进入退出、屏幕旋转-->
+        <item type="20105" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--闪达浮窗（非即时结束交互 & 弱平移动画）-->
+        <item type="20106" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--闪达浮窗（非即时结束交互 & 强平移动画）-->
+        <item type="20107" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--闪达浮窗（即时结束交互）-->
+        <item type="20108" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--分屏与PS（非即时结束交互 & 弱平移动画）-->
+        <item type="20109" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--分屏与PS（非即时结束交互 & 强平移动画）-->
+        <item type="20110" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--分屏与PS（即时结束交互）-->
+        <!--201-WMS动画结束-->
+        <!--203-通知中心动画开始-->
+        <item type="20301" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--横幅通知、简洁横幅弹出收起（横幅弹出、横幅自动收起、简洁横幅弹出、简洁横幅自动收起）-->
+        <item type="20302" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--横幅、简洁横幅点击启动应用-->
+        <item type="20303" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--横幅下拉出浮窗-->
+        <item type="20304" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--横幅滑动操作及结束后动画：长按横幅出现通知设置、横幅的上划收起、横幅/简洁横幅侧滑删除-->
+        <!--203-通知中心动画结束-->
+        <!--204-流体云动画开始-->
+        <item type="20401" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="true" isInGameAnim="true" /> <!--应用级别大幅变化:开启应用、应用-胶囊-->
+        <item type="20402" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--卡组变化、大卡片级别变化、小卡片级别变化-->
+        <item type="20403" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--流程云卡片长按出现菜单-->
+        <!--204-流体云动画结束-->
+        <!--205-音量条动画开始-->
+        <item type="20501" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--音量条出现/消失-->
+        <item type="20502" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--音量条展开成多个、展开的音量条的消失、应用音量单独调节界面的进入和消失-->
+        <!--205-音量条动画结束-->
+        <!--10-应用内可突破60hz动画开始-->
+        <item type="10001" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!-- OverScroller/OplusSpringOverScroller在屏滑动（列表滑动、短视频场景滑动） -->
+        <item type="10003" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!-- OverScroller/OplusSpringOverScroller fling（离屏fling，一般用于列表滑动场景 -->
+        <!--10-应用内可突破60hz动画结束-->
+    </special>
+    <special package="com.android.launcher"> 
+        <item type="20202" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="true" isWidespreadAnim="true" isInGameAnim="true" isLauncherAnim="true" /> <!--解锁进桌面动画-->
+    </special>
+    <special package="com.oplus.gesture"> 
+        <item type="20105" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--闪达浮窗（非即时结束交互 & 弱平移动画）-->
+        <item type="20106" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--闪达浮窗（非即时结束交互 & 强平移动画）-->
+        <item type="20107" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--闪达浮窗（即时结束交互）-->
+    </special>
+    <special package="com.oplus.pscanvas"> 
+        <item type="20108" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--分屏与PS（非即时结束交互 & 弱平移动画）-->
+        <item type="20109" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--分屏与PS（非即时结束交互 & 强平移动画）-->
+        <item type="20110" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--分屏与PS（即时结束交互）-->
+    </special>  
+    <special package="com.coloros.floatassistant">
+        <item type="50101" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--悬浮球拖动-->
+        <item type="50102" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--悬浮球点击展开/收起-->
+    </special>
+    <special package="com.coloros.smartsidebar">
+        <item type="50201" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" isInGameAnim="true" /> <!--拉出/收起侧边栏动画、展开全部面板、taskbar最近文件面板出现/消失-->
+        <item type="50202" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!--智能提醒-->
+        <!--10-应用内可突破60hz动画开始-->
+        <item type="10001" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!-- OverScroller/OplusSpringOverScroller在屏滑动（列表滑动、短视频场景滑动） -->
+        <item type="10003" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!-- OverScroller/OplusSpringOverScroller fling（离屏fling，一般用于列表滑动场景 -->
+        <!--10-应用内可突破60hz动画结束-->
+    </special>
+    <special package="com.oplus.screenshot">
+        <item type="50301" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="true" isInGameAnim="true" /> <!--截图浮窗动画-->
+    </special>
+    <special package="com.oplus.games">
+        <!--10-应用内可突破60hz动画开始-->
+        <item type="10001" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!-- OverScroller/OplusSpringOverScroller在屏滑动（列表滑动、短视频场景滑动） -->
+        <item type="10003" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="true" enableBreakAppRate90="false" isWidespreadAnim="false" /> <!-- OverScroller/OplusSpringOverScroller fling（离屏fling，一般用于列表滑动场景 -->
+        <!--10-应用内可突破60hz动画结束-->
+    </special>
+    <special package="com.facebook.orca">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.facebook.messenger.neue.MainActivity|com.facebook.orca.auth.StartScreenActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.xingin.xhs">
+        <item type="10002" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.xingin.matrix.detail.activity.DetailFeedActivity|com.xingin.xhs.index.v2.IndexActivityV2" /> <!--OverScroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.xingin.alpha.audience.AlphaAudienceActivity|com.xingin.alpha.audience.v2.AlphaAudienceActivityV2" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.ss.android.ugc.tiktok.lite">
+        <item type="10005" enable="true" targetFramerate="120" enableEndLowRate="true" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" enableActivityList="com.ss.android.ugc.aweme.splash.SplashActivity|com.ss.android.ugc.aweme.detail.ui.DetailActivity" /> <!--Scroller startScroll（离屏Scroll，一般用于短视频滑动场景）-->
+    </special>
+    <special package="com.oplus.camera">
+        <item type="50601" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="true" enableBreakAppRate90="true" isWidespreadAnim="true" /> <!--相机进相册/相册返回相机界面切换动画--> 
+    </special>
+    <special package="com.oplus.wallpapers">
+        <item type="50701" enable="true" targetFramerate="120" enableEndLowRate="false" enableBreakAppRate60="false" enableBreakAppRate90="false" isWidespreadAnim="true" /> <!--动态壁纸预览播放帧率维持--> 
+    </special>
+</filter-conf>

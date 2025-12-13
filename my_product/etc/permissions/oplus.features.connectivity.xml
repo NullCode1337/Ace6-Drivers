@@ -1,0 +1,45 @@
+<oplus-config>
+<!-- hanshirong@CONNECTIVITY.WIFI.ARCHITECHURE, 2020/10/23   -->
+    <oplus-feature name="oplus.software.wlan.dual_sta" />
+    <oplus-feature name="oplus.software.wlan.dbs" />
+    <oplus-feature name="oplus.software.wlan.wifi6" />
+<!-- LiXiong@CONNECTIVITY.WIFI.NETWORK.ROUTERBOOST, 2020/09/27   -->
+    <oplus-feature name="oplus.software.wlan.routerboost" />
+<!-- Zhouhuiquan@CONNECTIVITY.WIFI.CONNECT.3574191, 2022/10/20, Add for wifi connection self cure v3 -->
+    <oplus-feature name="oplus.software.wlan.connection_selfcure_v3" />
+<!-- ZhaoXiang@CONNECTIVITY.WIFI.NETWORK, 2022/2/25 -->
+    <oplus-feature name="oplus.software.wlan.seamless_switch" />
+<!-- SunZhao@CONNECTIVITY.WIFI.NETSHARE.3777878, 2022/09/02 -->
+    <oplus-feature name="oplus.software.wlan.net_share" />
+<!-- ZhengDeng@CONNECTIVITY.WIFI.BASIC.P2P.3615099, 2022/09/15, add for AP-GC CONNECT -->
+    <oplus-feature name="oplus.software.wlan.ap_gc_connect" />
+<!-- LiuZixuan@CONNECTIVITY.WIFI.CONNECT.SAP.5470030, 2023/07/24, Add for SAP 5G160M feature -->
+    <oplus-feature name="oplus.software.wlan.5g_160M_softap" />
+<!-- LiuZixuan@CONNECTIVITY.WIFI.CONNECT.SAP.5470030, 2023/07/24, Add for SAP 5G160M feature -->
+    <oplus-feature name="oplus.software.wlan.5g_160M_station_for_phone_clone" />
+<!-- fangbinghua@CONNECTIVITY.WIFI.HARDWARE.POWER.7068288, 2024/06/21, add for Dynamic PCIe gen switch -->
+    <oplus-feature name="oplus.software.wlan.dynamic_pcie_gen_switch" />
+<!-- fangbinghua@CONNECTIVITY.WIFI.HARDWARE.WSA, 2022/11/22 -->
+    <oplus-feature name="oplus.software.wlan.smart_antenna" />
+<!-- fangbinghua@CONNECTIVITY.WIFI.HARDWARE.RSSI.5627579, 2023/09/06 -->
+    <oplus-feature name="oplus.software.wlan.rssi_issue_tracker" />
+<!-- Zhiqiang Yuan@CONNECTIVITY.WIFI.HARDWARE.POWER.7062768, 2024/06/18,Add for WiFi power backoff when voltage is low -->
+    <oplus-feature name="oplus.software.wlan.vbat" />
+<!-- chaixiwu@CONNECTIVITY.WIFI.network.smartht40, 2024/03/26, add for wifi smartHT40 func -->
+    <oplus-feature name="oplus.software.wlan.smart_ht40" />
+<!-- fangbinghua@CONNECTIVITY.WIFI.HARDWARE.POWER, 2024/04/22, add for wifi gtx controller -->
+    <oplus-feature name="oplus.software.wlan.gtx_controller" />
+<!-- LiFenfen@CONNECTIVITY.WIFI.HARDWARE.POWER.LIMITATION.7651893, 2024/07/25, Add for limit txpower for RF standard -->
+    <oplus-feature name="oplus.software.wlan.power.limitation" />
+<!--LiFenfen@CONNECTIVITY.WIFI.HARDWARE.SAR.TXDUTY.6535627, 2024/01/06, Add for wifi SAR tx/idle function to raise tx power -->
+    <oplus-feature name="oplus.software.wlan.sar.txduty" />
+<!-- FanBingqi@CONNECTIVITY.WIFI.NETWORK.9618425, 2025/08/12, Add for aggregate download and automatic login authentication -->
+    <oplus-feature name="oplus.software.wlan.download_dbs_or_mcc" />
+    <oplus-feature name="oplus.software.wifi.multi.sta.browser.auto.login" />
+<!--keliangwen@CONNECTIVITY.BT, 2024/10/20, support for DC Sar -->
+    <oplus-feature name="oplus.software.bt.sar_support" />
+<!-- Yanglijia@CONNECTIVITY.WIFI.QOE.6632368, 2025/03/06, add for app qoe -->
+    <oplus-feature name="oplus.software.wlan.qoe_estimate" />
+<!-- LiFenfen@CONNECTIVITY.WIFI.HARDWARE.POWER.9463175, 2025/06/30, Add for domestic fem config -->
+    <oplus-feature name="oplus.software.wlan.game_chip" />
+</oplus-config>

@@ -1,0 +1,11 @@
+ro.oplus.product.series=OnePlus_Ace_Series
+persist.sys.wifi.channel.version=39
+persist.sys.oplus.bt.le_audio_white_list_enable=true
+persist.sys.oplus.bt.le_audio_over_spp=true
+persist.bluetooth.hpm.feature_mask=80,66,80,80,76,80,0x0001
+ro.build.version.ota=PLQ110_11.A.01_001_202511152111
+ro.build.display.ota=PLQ110_11_A.01
+ro.oplus.display.screenhole.positon=599,45:673,119
+ro.lcd.display.screen.underlightsensor.region=752,74,799,113
+ro.oplus.lcd.display.screen.underlightsensor.region=752,74,799,113
+ro.oplus.audio.product.para=KTM_20250630_V1

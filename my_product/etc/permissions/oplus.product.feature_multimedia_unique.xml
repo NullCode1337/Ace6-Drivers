@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<oplus-config>
+	<oplus-feature name="oplus.software.audio.haptic_channel_support"/>
+	<oplus-feature name="oplus.software.haptic_vibrator_v1.support"/>
+	<oplus-feature name="oplus.software.audio.media_control"/>
+	<oplus-feature name="oplus.software.audio.hearing_health_support"/>
+	<oplus-feature name="oplus.software.audio.spl_limit_support"/>
+	<oplus-feature name="oplus.software.audio.dualspk_support"/>
+	<oplus-feature name="oplus.software.spatializer_speaker"/>
+	<oplus-feature name="oplus.software.bluetooth_volume_sync"/>
+	<oplus-feature name="oplus.software.multi_app.volume.adjust.support"/>
+	<oplus-feature name="oplus.software.audio.assistant_volume_support"/>
+	<oplus-feature name="oplus.software.audio.volume_default_adjust"/>
+	<oplus-feature name="oplus.software.audio.effect.combined"/>
+	<oplus-feature name="oplus.software.audio.mss_music_only"/>
+	<oplus-feature name="oplus.hardware.audio.voice_isolation_support_v2"/>
+	<oplus-feature name="oplus.software.video.sr_support"/>
+	<oplus-feature name="oplus.software.video.osie_support"/>
+	<oplus-feature name="oplus.software.camera.heic_support"/>
+	<oplus-feature name="oplus.software.game.cold.start.speedup.enable"/>
+</oplus-config>

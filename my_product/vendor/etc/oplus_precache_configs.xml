@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<filter-conf>
+    <version>20251104</version>
+    <toggle>1</toggle>
+
+    <feature name="PreCache" enable="1">
+
+        <!--
+        // AOSP Cache size limits.
+        static const size_t maxKeySize = 1024;
+        static const size_t maxValueSize = 2 * 1024 * 1024;
+        static size_t maxTotalSize = 4 * 1024 * 1024;
+         -->
+
+        <!--
+                Feature owner: wangkaiwen
+                Update des   : 20250610, init code, used for unit test
+         -->
+        <application name="PreCache_test" enable="1" CacheSize="12" CacheMemory="32693">
+            <MaxKeySize>10240</MaxKeySize>
+            <MaxValueSize>20971520</MaxValueSize>
+            <MaxTotalSize>41943040</MaxTotalSize>
+            <CachePath>/data/data/precache_test/otest/</CachePath>
+            <KeySet limited="no">
+                <Key KeyHash="3858283909" KeySize="1 " ValueSize="32 "/>
+                <Key KeyHash="886438756" KeySize="4 " ValueSize="29887"/>
+            </KeySet>
+        </application>
+
+
+        <!-- ///////////////////////////////////////////////////////////// App configs start -->
+
+        <!--
+                Feature owner: taoran2
+                Update des   : 20250903, init code, used for systemui
+        -->
+        <application name="com.android.systemui" enable="1" CacheSize="12" CacheMemory="32693">
+            <MaxKeySize>1024</MaxKeySize>
+            <MaxValueSize>2097152</MaxValueSize>
+            <MaxTotalSize>4194304</MaxTotalSize>
+            <CachePath>/my_product/etc/com.android.systemui/cache/</CachePath>
+            <KeySet limited="no">
+            </KeySet>
+        </application>
+
+        <!--
+            committer: liyuhang
+            update des: add shader cache for launcher
+        -->
+        <application name="com.android.launcher" enable="1" CacheSize="12" CacheMemory="32693">
+            <MaxKeySize>1024</MaxKeySize>
+            <MaxValueSize>2097152</MaxValueSize>
+            <MaxTotalSize>4194304</MaxTotalSize>
+            <CachePath>/my_product/etc/com.android.launcher/cache/</CachePath>
+            <KeySet limited="no">
+            </KeySet>
+        </application>
+        <!--
+            committer: liuxiaodong
+            update des: add shader cache for gallery
+        -->
+        <application name="com.coloros.gallery3d" enable="1" CacheSize="12" CacheMemory="32693">
+            <MaxKeySize>1024</MaxKeySize>
+            <MaxValueSize>2097152</MaxValueSize>
+            <MaxTotalSize>4194304</MaxTotalSize>
+            <CachePath>/my_product/etc/com.coloros.gallery3d/cache/</CachePath>
+            <KeySet limited="no">
+                <Key KeyHash="3858283909" KeySize="1  " ValueSize="32  "></Key>
+            </KeySet>
+        </application>
+
+        <!--
+               committer: lizhangqing
+               update des: add shader cache for assistantscreen
+         -->
+        <application name="com.coloros.assistantscreen" enable="1" CacheSize="12" CacheMemory="32693">
+            <MaxKeySize>10240</MaxKeySize>
+            <MaxValueSize>20971520</MaxValueSize>
+            <MaxTotalSize>41943040</MaxTotalSize>
+            <CachePath>/my_product/etc/com.coloros.assistantscreen/cache/</CachePath>
+            <KeySet limited="no">
+            </KeySet>
+        </application>
+
+    </feature>
+
+</filter-conf>

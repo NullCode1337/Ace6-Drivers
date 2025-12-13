@@ -1,0 +1,51 @@
+<oplus-config>
+
+    <!-- Peng.Yizhang@ANDROID.SENSOR, 2020/11/20, add for QCOM Linear motor vibrator -->
+    <oplus-feature name="oplus.software.vibrator_qcom_lmvibrator" />
+    <!-- Peng.Yizhang@ANDROID.SENSOR, 2020/11/20, add end -->
+    <!-- Haifeng.Zhu@ANDROID.BIOMETIRC, 2021/05/13, add for feature face close eye verify -->
+    <oplus-feature name="oplus.software.face_closeeye_detect"/>
+
+    <!-- Guofu.Yang@ANDROID.INPUT, 2020/06/17, add for Linear motor vibrator -->
+    <oplus-feature name="oplus.software.vibrator_lmvibrator" />
+    <!-- Guofu.Yang@ANDROID.INPUT, 2020/06/08, add end -->
+
+    <!-- CaiChunchun@ANDROID.INPUT, 2020/11/25, add for wake up arouse -->
+    <oplus-feature name="oplus.software.wake_up_arouse_support" />
+    <!-- CaiChunchun@ANDROID.INPUT, 2020/11/25, add end -->
+    <!-- CaiChunchun@ANDROID.INPUT, 2021/07/07, add for blackgesture -->
+    <oplus-feature name="oplus.software.gesture_proximitysensor" />
+    <!-- CaiChunchun@ANDROID.INPUT, 2021/07/07, add end -->
+
+    <!-- Fei.Luo@ANDROID.SENSOR, 2020/11/20, add for acc richtap -->
+    <oplus-feature name="oplus.software.vibrator_richctap" />
+    <!-- Fei.Luo@ANDROID.SENSOR, 2020/11/20, add end -->
+
+    <!-- Hang.Zhao@BSP.CHG, 2022/09/15, add for new oplusvibrator interface -->
+    <oplus-feature name="oplus.hardware.vibrator_oplus_v1" />
+    <!-- Hang.Zhao@BSP.CHG, 2022/09/15, add end -->
+
+    <!-- Fei.Luo@ANDROID.SENSOR, 2020/11/20, add for keyboard vibration convert -->
+    <oplus-feature name="oplus.software.vibration_keyboard_convert" />
+    <!-- Fei.Luo@ANDROID.SENSOR, 2020/11/20, add end -->
+
+    <!-- Xianhua.Li@ANDROID.CHG, 2022/08/9, add for vibrator_xlinear -->
+    <oplus-feature name="oplus.hardware.vibrator_xlinear_type" />
+    <!-- Xianhua.Li@ANDROID.CHG, 2022/08/9, add end -->
+
+    <!-- steve.shen@OPTI, 2021/03/12, Add for animation scroll opt -->
+    <oplus-feature name="oplus.software.scroll.animation_opt" />
+
+    <!-- Xianhua.Li@ANDROID.CHG, 2022/08/24, add for typecotg -->
+    <oplus-feature name="oplus.typecotg.connection.menu.support" />
+    <!-- Xianhua.Li@ANDROID.CHG, 2022/08/24, add end -->
+
+    <!-- Hailin.Peng@BSP.SENSOR, 2025/07/8, add for rear_IR -->
+    <oplus-feature name="oplus.hardware.type.rear_IR" />
+    <!-- Hailin.Peng@BSP.SENSOR, 2025/07/8, add end -->
+
+    <!-- Bing.Zhong@ANDROID.INPUT, 2024/08/27, add for support dynamic report rate -->
+    <oplus-feature name="oplus.software.dynamic_report_rate" />
+    <!-- Bing.Zhong@ANDROID.INPUT, 2024/08/27, add for support dynamic report rate end-->
+
+</oplus-config>

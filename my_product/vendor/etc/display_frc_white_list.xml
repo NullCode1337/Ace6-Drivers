@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <version>20250716</version>
+    <filter-name>display_frc_white_list</filter-name>
+
+    <!--Config package DSR-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.pubgmhd</mConfigMEMCDSRPackage> <!--和平精英-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.projectg</mConfigMEMCDSRPackage> <!--和平精英-->
+    <mConfigMEMCDSRPackage  type="4">com.netease.party.nearme.gamecenter</mConfigMEMCDSRPackage> <!--蛋仔派对-->
+    <mConfigMEMCDSRPackage  type="4">com.netease.party</mConfigMEMCDSRPackage> <!--蛋仔派对-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.jkchess</mConfigMEMCDSRPackage> <!--金铲铲-->
+    <mConfigMEMCDSRPackage  type="4">com.netease.dwrg.nearme.gamecenter</mConfigMEMCDSRPackage> <!--第五人格-->
+    <mConfigMEMCDSRPackage  type="4">com.netease.dwrg</mConfigMEMCDSRPackage> <!--第五人格-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.dfm</mConfigMEMCDSRPackage> <!--三角洲行动-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.mf.uam</mConfigMEMCDSRPackage> <!--暗区突围-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.speedmobile</mConfigMEMCDSRPackage> <!--QQ飞车-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.cod</mConfigMEMCDSRPackage> <!--使命召唤手游-->
+    <mConfigMEMCDSRPackage  type="4">com.netease.sky.nearme.gamecenter</mConfigMEMCDSRPackage> <!--光·遇-->
+    <mConfigMEMCDSRPackage  type="4">com.netease.sky</mConfigMEMCDSRPackage> <!--光·遇-->
+    <mConfigMEMCDSRPackage  type="4">com.netease.yyslscn</mConfigMEMCDSRPackage> <!--燕云十六声-->
+    <mConfigMEMCDSRPackage  type="4">com.netease.yhtj.nearme.gamecenter</mConfigMEMCDSRPackage> <!--萤火突击-->
+    <mConfigMEMCDSRPackage  type="4">com.papegames.lysk.cn</mConfigMEMCDSRPackage> <!--恋与深空-->
+    <mConfigMEMCDSRPackage  type="4">com.papegames.lysk.cn.nearme.gamecenter</mConfigMEMCDSRPackage> <!--恋与深空-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.nfsonline</mConfigMEMCDSRPackage> <!--极品飞车:集结-->
+    <mConfigMEMCDSRPackage  type="4">com.kurogame.mingchao</mConfigMEMCDSRPackage> <!--鸣潮-->
+    <mConfigMEMCDSRPackage  type="4">com.kurogame.wutheringwaves.global</mConfigMEMCDSRPackage> <!--鸣潮-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.supercell.brawlstars</mConfigMEMCDSRPackage> <!--荒野乱斗-->
+    <mConfigMEMCDSRPackage  type="4">com.netease.mc.nearme.gamecenter</mConfigMEMCDSRPackage> <!--我的世界:移动版-->
+    <mConfigMEMCDSRPackage  type="4">com.kiloo.subwaysurf</mConfigMEMCDSRPackage> <!--地铁跑酷-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.supercell.clashofclans</mConfigMEMCDSRPackage> <!--部落冲突-->
+    <mConfigMEMCDSRPackage  type="4">com.galasports.b5.nearme.gamecenter</mConfigMEMCDSRPackage> <!--美职巅峰对决-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.game.rhythmmaster</mConfigMEMCDSRPackage> <!--节奏大师-->
+    <mConfigMEMCDSRPackage  type="4">nn4.nearme.gamecenter</mConfigMEMCDSRPackage> <!--闪耀暖暖-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.codev</mConfigMEMCDSRPackage> <!--无畏契约 -->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.WePop</mConfigMEMCDSRPackage> <!--跑跑卡丁车官方竞速版-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.sgame</mConfigMEMCDSRPackage> <!--王者荣耀-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.sgamece</mConfigMEMCDSRPackage> <!--王者荣耀-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.lolm</mConfigMEMCDSRPackage> <!--英雄联盟-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.cf</mConfigMEMCDSRPackage> <!--穿越火线：枪战王者-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.letsgo</mConfigMEMCDSRPackage> <!--元梦之星-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.dnf</mConfigMEMCDSRPackage> <!--地下城与勇士：起源-->
+    <mConfigMEMCDSRPackage  type="4">com.miHoYo.Nap</mConfigMEMCDSRPackage> <!--绝区零-->
+    <mConfigMEMCDSRPackage  type="4">com.netease.aceracer.nearme.gamecenter</mConfigMEMCDSRPackage> <!--王牌竞速-->
+    <mConfigMEMCDSRPackage  type="4">com.netease.aceracer</mConfigMEMCDSRPackage> <!--王牌竞速-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.tmgp.gnyx</mConfigMEMCDSRPackage> <!--高能英雄-->
+    <mConfigMEMCDSRPackage  type="4">com.miHoYo.bh3.nearme.gamecenter</mConfigMEMCDSRPackage> <!--崩坏3-->
+    <mConfigMEMCDSRPackage  type="4">com.miHoYo.enterprise.NGHSoD</mConfigMEMCDSRPackage> <!--崩坏3-->
+    <mConfigMEMCDSRPackage  type="4">com.miHoYo.bh3.bilibili</mConfigMEMCDSRPackage> <!--崩坏3-->
+    <mConfigMEMCDSRPackage  type="4">com.pwrd.persona5x.laohu</mConfigMEMCDSRPackage> <!--女神异闻录-->
+    <mConfigMEMCDSRPackage  type="4">com.p5x.nearme.gamecenter</mConfigMEMCDSRPackage> <!--女神异闻录-->
+    <mConfigMEMCDSRPackage  type="4">com.tencent.KiHan</mConfigMEMCDSRPackage> <!--火影忍者-->
+    <mConfigMEMCDSRPackage  type="4">com.papegames.infinitynikki</mConfigMEMCDSRPackage> <!--无限暖暖-->
+</filter-conf>

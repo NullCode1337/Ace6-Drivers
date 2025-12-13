@@ -1,0 +1,6 @@
+id=ace6_drivers
+name=Ace6 Drivers (ColorOS 16.0.1.302)
+version=v1.0.0
+versionCode=20251213
+author=nullcode1337, Jonas Selo
+description=Fix battery, display and FOD issues on OxygenOS
