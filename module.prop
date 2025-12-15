@@ -1,6 +1,6 @@
 id=ace6_drivers
 name=Ace6 Drivers for OOS
 version=v1.1.0
-versionCode=20251213
+versionCode=20251215
 author=nullcode1337, Jonas Selo
 description=Fix battery, display, FOD, networking (and others) on OxygenOS. Tested on 16.0.1.302
