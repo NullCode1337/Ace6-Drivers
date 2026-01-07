@@ -13,7 +13,7 @@ This module fixes all known issues with the [OxygenOS ports for Ace 6](https://r
 
 ## Installation
 - Flash with KernelSU / SukiSU Ultra (with metamodule)
-- Flashing with [OrangeFox](https://github.com/NullCode1337/android_orangefox_PLQ110/releases/latest) is also possible
+- Flashing with [OrangeFox](https://github.com/NullCode1337/android_device_orangefox_ktm/releases/latest) is also possible
 
 ## Thanks
 - @koaaN (Jonas Salo) - Created the ports, pointed me around on what to fix
