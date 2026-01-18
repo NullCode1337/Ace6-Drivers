@@ -1,7 +1,7 @@
-# OnePlus Ace 6 Drivers for OxygenOS
-As we all know PLQ110 will never receive a global variant (like PLR110), so it won't get proper OxygenOS.
+# OxygenOS Drivers for OnePlus Ace 6
+As we all know, PLQ110 will never receive a global variant (like PLR110), so it won't get proper OxygenOS.
 
-This module fixes all known issues with the [OxygenOS ports for Ace 6](https://roms.danielspringer.at/index.php?dir=Oneplus+Ace+6%2FSuper+Duper+Testbuilds)
+This module fixes all known issues with [OxygenOS Ports for Ace 6](https://roms.danielspringer.at/index.php?dir=Oneplus+Ace+6%2FOxygenOS+Flashers)
 
 ## What's Different?
 - Fixed incorrect battery capacity
@@ -12,12 +12,12 @@ This module fixes all known issues with the [OxygenOS ports for Ace 6](https://r
 - Allow using OOS my_region (AI features and networking now work)
 
 ## Installation
-- Flash with KernelSU / SukiSU Ultra (with metamodule)
+- Install with KernelSU / [SukiSU Ultra](https://t.me/op15chat/30123) ([Metamodule](https://github.com/Hybrid-Mount/meta-hybrid_mount) recommended)
 - Flashing with [OrangeFox](https://github.com/NullCode1337/android_device_orangefox_ktm/releases/latest) is also possible
 
 ## Thanks
-- @koaaN (Jonas Salo) - Created the ports, pointed me around on what to fix
-- Yakayan, Raphael - Ace 6 testers
+- @koaaN (Jonas Salo) - OOS Hybrid Builder (which I use for ports 🙏 legendary guy)
+- Yakayn - SukiSU Ultra GKI for OnePlus Ace 6
 
 ## Support
 [https://t.me/op15chat](https://t.me/op15chat)
